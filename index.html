@@ -1,13 +1,13 @@
 <body>
     <div id="container-left">
         <div class="pair">
-            <input class="slidecontainer" id="gravitySlider" type="range" min="0" max="10" value="9" />
+            <input class="slider" id="gravitySlider" type="range" min="0" max="10" value="9" />
             <br>
             <label class="label" id="gravitySliderLabel" for="gravitySlider">Gravity</label>
         </div>
         <br>
         <div class="pair">
-            <input class="slidecontainer" id="reboundSlider" type="range" min="1" max="100" value="50" />
+            <input class="slider" id="reboundSlider" type="range" min="1" max="100" value="50" />
             <br>
             <label class="label" id="reboundSliderLabel" for="reboundSlider">Rebound</label>
         </div>
@@ -41,13 +41,13 @@
         }
 
         #container-left {
-            padding-top: 1%;
-            padding-left: 1%;
             bottom: 0;
             left: 0;
             position: relative;
             height: 5%;
             float: left;
+            font-size: 16px;
+            font-family: Arial, serif;
         }
 
         #container-right {
@@ -72,9 +72,7 @@
             border: 2px solid #555555;
             border-radius: 2px;
             -webkit-transition-duration: 0.4s;
-            /* Safari */
             transition-duration: 0.4s;
-
             padding: 12px 28px;
             text-align: center;
             text-decoration: none;
@@ -86,6 +84,11 @@
         .button:hover {
             background-color: #555555;
             color: white;
+        }
+
+        .slider {
+            width: 85%;
+            height: 50%;
         }
 
         .label {

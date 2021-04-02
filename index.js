@@ -10,7 +10,6 @@ const ctx = canvas.getContext("2d");
 let gravitySlider = document.getElementById("gravitySlider");
 let reboundSlider = document.getElementById("reboundSlider");
 
-
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
