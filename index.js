@@ -28,8 +28,7 @@ function clamp(x, b, e) {
     max = Math.max(b, e);
     if (x < min) {
         return min;
-    }
-    else if (x > max) {
+    } else if (x > max) {
         return max;
     }
     return x;
@@ -117,8 +116,7 @@ class Circle {
                     this.y = y1 + this.r;
                     this.vy = -this.vy * (reboundSlider.value / 100);
                     hadCollision = true;
-                }
-                else if (this.vy > 0) {
+                } else if (this.vy > 0) {
                     this.y = y1 - this.r;
                     this.vy = -this.vy * (reboundSlider.value / 100);
                     hadCollision = true;
